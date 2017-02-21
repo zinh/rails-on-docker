@@ -29,6 +29,8 @@
 5. Run server
 
         docker-compose up
+        
+6. Access the app at http://localhost:3000
 
 ### Useful command
 1. Rails generator
