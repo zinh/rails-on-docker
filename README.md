@@ -29,3 +29,21 @@
 5. Run server
 
         docker-compose up
+
+### Useful command
+1. Rails generator
+
+        docker-compose run web rails generate model User email:string password:string
+
+2. Connect to mysql cli(no password needed)
+
+        docker-compose exec db mysql -uroot
+
+3. Rails console on running environment
+
+        docker-compose exec web rails console
+
+4. Attach to a running app(very useful when using with `pry`, `byebug`, `irb.binding`, ...)
+
+        docker attach <container name>
+        # to get the name of running container use __docker ps__
